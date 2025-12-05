@@ -41,7 +41,7 @@ const Player = () => {
   }, [id]);
 
   return (
-    <div className="flex flex-col items-center gap-12 w-full">
+    <div className="relative h-dvh w-full bg-black overflow-hidden flex flex-col items-center">
 
       <div className="absolute inset-0 z-0">
         <ThreeScene 

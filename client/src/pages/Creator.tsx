@@ -38,7 +38,7 @@ const Creator = () => {
   };
 
   return (
-    <div className="min-h-screen max-w-screen flex flex-col items-center gap-12 w-full">
+    <div className="relative h-dvh w-full bg-black overflow-hidden flex flex-col items-center">
       {/* 1. Interactive Wall */}
       <ThreeScene onLetterClick={handleLetterClick} activeLetter={previewLetter}/>
 
