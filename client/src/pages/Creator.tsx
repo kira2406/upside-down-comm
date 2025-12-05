@@ -49,15 +49,17 @@ const Creator = () => {
         
       </div>
 
-      <div className="absolute inset-0 z-10 pointer-events-none flex flex-col justify-end pb-12 items-center">
+      <div className="absolute inset-0 z-10 pointer-events-none flex flex-col justify-end items-center pb-6 lg:pb-12">
         
-        <div className="pointer-events-auto w-full max-w-2xl px-4 flex flex-col gap-6">
+        <div className="pointer-events-auto w-full max-w-2xl px-4 flex flex-col gap-4 lg:gap-6">
            
           <div className="flex gap-4 justify-center">
-          <button onClick={() => setMessage("")} className="px-8 py-3 border-2 border-red-600 text-red-500 font-bold rounded hover:bg-red-600 hover:text-white uppercase tracking-widest">
+          <button onClick={() => setMessage("")} className="border-2 border-red-600 text-red-500 font-bold rounded hover:bg-red-600 hover:text-white uppercase tracking-widest px-4 py-2 text-sm
+          lg:px-8 lg:py-3 lg:text-base">
             Clear
           </button>
-          <button onClick={shareMessage} className="px-8 py-3 bg-gray-200 text-white-900 font-bold rounded hover:bg-white uppercase tracking-widest shadow-lg">
+          <button onClick={shareMessage} className="bg-gray-200 text-white-900 font-bold rounded hover:bg-white uppercase tracking-widest shadow-lg px-2 py-2 text-sm
+          lg:px-8 lg:py-3 lg:text-base">
             Share Message
           </button>
         </div>

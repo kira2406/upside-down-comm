@@ -49,24 +49,29 @@ const Player = () => {
         />
       </div>
 
-      <div className="absolute inset-0 z-10 pointer-events-none flex flex-col justify-end pb-12 items-center">
+      <div className="absolute inset-0 z-10 pointer-events-none flex flex-col justify-end items-center pb-6 lg:pb-12">
         
         {/* Enable pointer events ONLY on the buttons/monitor */}
-        <div className="pointer-events-auto w-full max-w-2xl px-4 flex flex-col gap-6">
+        <div className="pointer-events-auto w-full max-w-2xl px-4 flex flex-col gap-4 lg:gap-6">
            
               <div className="flex gap-4 justify-center mt-6">
                 <button 
                   onClick={() => playMessage(message)} 
-                  className="px-8 py-3 border-2 border-gray-500 text-gray-300 font-bold rounded hover:text-white hover:border-white uppercase tracking-widest flex items-center justify-center transition-all"
+                  className="border-2 border-gray-500 text-gray-300 font-bold rounded hover:text-white hover:border-white uppercase tracking-widest flex items-center justify-center transition-all
+                  px-4 py-2 text-sm
+                  lg:px-8 lg:py-3 lg:text-base
+                  "
                 >
-                  Replay Signal
+                  Replay Message
                 </button>
                 
                 <button 
                   onClick={() => navigate("/")}
-                  className="px-8 py-3 border-2 border-gray-500 text-gray-300 font-bold rounded hover:text-white hover:border-white uppercase tracking-widest flex items-center justify-center transition-all"
+                  className="border-2 border-gray-500 text-gray-300 font-bold rounded hover:text-white hover:border-white uppercase tracking-widest flex items-center justify-center transition-all
+                  px-4 py-2 text-sm
+                  lg:px-8 lg:py-3 lg:text-base"
                 >
-                  Create New Signal
+                  Create New Message
                 </button>
                 
            </div>
